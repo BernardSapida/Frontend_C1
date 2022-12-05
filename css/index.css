@@ -13,6 +13,11 @@ body header {
   align-items: center;
   box-shadow: 0 0 5px hsl(0deg, 0%, 70%);
 }
+body header .banner {
+  display: flex;
+  align-items: center;
+   gap: 10px;
+}
 body header .banner p.title {
   font-size: 18px;
 }

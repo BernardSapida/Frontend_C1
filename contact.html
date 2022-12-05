@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./public/css/contact.css"/>
+    <title>Contact Us</title>
+  </head>
+  <body>
+    <header>
+      <div class="banner">
+        <p class="title"><strong>Online Food Shop</strong></h1>
+      </div>
+      <nav class="navbar">
+        <ul class="nav_links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="#">About</a></li>
+          <li><a href="#">Menu</a></li>
+          <li><a href="contact.html">Contact Us</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section class="section_contact">
+      <h1>Contact Us</h1>
+      <form action="#">
+        <div class="form-container">
+          <label for="query">Type of Query <span>*</span></label><br/>
+          <select name="queryType" class="form-select" aria-label="Type of Query">
+            <option value="select" selected>Select</option>
+            <option value="Order Related Issues">Order Related Issues</option>
+            <option value="Site Related Issues">Site Related Issues</option>
+            <option value="Complaint Related Issues">Complaint Related Issues</option>
+            <option value="Others">Others</option>
+          </select>
+        </div>
+        <div class="form-container">
+          <label for="name">Name <span>*</span></label><br/>
+          <input
+            type="text"
+            name="name"
+            class="form-input"
+            id="name"
+            placeholder="Enter your Name"
+          />
+        </div>
+        <div class="form-container">
+          <label for="email">Email <span>*</span></label><br/>
+          <input
+            type="email"
+            name="email"
+            class="form-input"
+            id="email"
+            placeholder="Enter your email"
+          />
+        </div>
+        <div class="form-container">
+          <label for="phone">Phone Number <span>*</span></label><br/>
+          <input
+            type="phone"
+            name="myPhone"
+            class="form-input"
+            id="phone"
+            placeholder="Enter your phone no."
+          />
+        </div>
+        <div class="form-container">
+          <p>Are you a member of Onlne Food Shop <span>*</span></p>
+          <input type="radio" id="yes" name="eligible" aria-label="yes"/>
+          <label for="yes">Yes</label><br/>
+          <input type="radio" id="no" name="eligible" aria-label="no"/>
+          <label for="no">No</label>
+        </div>
+        <div class="form-container">
+          <label for="message">Ellaborate your query<span>*</span></label><br/>
+          <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
+        </div>
+        <div class="form-btn">
+          <input type="submit" class="submit" value="Submit" />
+          <input type="reset" class="reset" value="Reset" />
+        </div>
+      </form>
+    </section>
+    <footer>Copyright © 2020-2021 OnlineFoodShop. All Rights are reserved</footer>
+  </body>
+</html>

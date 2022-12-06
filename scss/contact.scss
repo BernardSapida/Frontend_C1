@@ -1,0 +1,142 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+}
+
+body {
+    & header {
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 0 5px hsl(0, 0%, 70%);
+
+        & .banner {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            & p.title {
+                font-size: 18px;
+            }
+        }
+
+        & nav.navbar {
+            & ul.nav_links {
+                list-style-type: none;
+
+                & li {
+                    padding: 10px;
+                    display: inline-block;
+
+                    &.active {
+                        border-bottom: 2px solid hsl(0, 0%, 5%);
+
+                        & a {
+                            color: hsl(0, 0%, 5%);
+                        }
+                    }
+
+                    & a {
+                        display: inline-block;
+                        text-decoration: none;
+                        color: hsl(0, 0%, 60%);
+
+                        &:hover {
+                            color: hsl(0, 0%, 5%);
+                            transition: all 350ms ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    & section.section_contact {
+        margin: 50px auto;
+        width: 95%;
+
+        & > p {
+            text-align: center;
+            font-size: 34px;
+            margin-bottom: 10px;
+        }
+
+        & h1 {
+            text-align: center;
+            margin-bottom: 20px;
+        }
+
+        & form {
+            & .form-container {
+                margin: 10px auto;
+                width: 350px;
+
+                & label, & p {
+                    font-size: 14px;
+                }
+
+                & label span {
+                    color: rgb(255, 0, 76);
+                }
+
+                & .form-input, .form-select, textarea {
+                    padding: 10px 15px;
+                    width: 100%;
+                    border-radius: 5px;
+                    border: 1px solid hsla(0, 0%, 0%, 0.1);
+                }
+            }
+
+            & .form-btn {
+                margin: 10px auto;
+                width: 350px;
+
+                & button {
+                    margin-bottom: 5px;
+                    width: 100%;
+                    margin: 10px auto;
+                    padding: 10px 20px;
+                    display: block;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+
+                    &.submit {
+                        border: 1px solid hsl(207, 100%, 50%);
+                        background-color: hsla(207, 100%, 50%, 0.1);
+
+                        &:hover {
+                            background-color: hsl(207, 100%, 50%);
+                            color: hsl(0, 0%, 90%);
+                            transition: all 350ms ease-in-out;
+                        }
+                    }
+
+                    &.reset {
+                        border: 1px solid hsl(342, 100%, 50%);
+                        background-color: hsla(342, 100%, 50%, 0.1);
+
+                        &:hover {
+                            background-color: hsl(342, 100%, 50%);
+                            color: hsl(0, 0%, 90%);
+                            transition: all 350ms ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    & footer {
+        padding: 20px;
+        background-color: hsl(0, 0%, 10%);
+        color: hsl(0, 0%, 90%);
+        text-align: center;
+        font-size: 14px;
+    }
+}

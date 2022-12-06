@@ -3,7 +3,8 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="./css/contact.css"/>
+    <link rel="stylesheet" href="./public/css/contact.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css"/>
     <title>Contact Us</title>
   </head>
   <body>
@@ -17,11 +18,12 @@
           <li><a href="index.html">Home</a></li>
           <li><a href="#">About</a></li>
           <li><a href="#">Menu</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
+          <li class="active"><a href="contact.html">Contact Us</a></li>
         </ul>
       </nav>
     </header>
     <section class="section_contact">
+      <p><i class="fa-solid fa-phone"></i></p>
       <h1>Contact Us</h1>
       <form action="#">
         <div class="form-container">
@@ -76,8 +78,8 @@
           <textarea name="message" id="message" cols="30" rows="10" placeholder="Enter your message"></textarea>
         </div>
         <div class="form-btn">
-          <input type="submit" class="submit" value="Submit" />
-          <input type="reset" class="reset" value="Reset" />
+          <button type="button" class="submit"><i class="fa-solid fa-paper-plane"></i> Submit</button>
+          <button type="button" class="reset"><i class="fa-solid fa-repeat"></i> Reset</button>
         </div>
       </form>
     </section>

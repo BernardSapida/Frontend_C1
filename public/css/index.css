@@ -16,7 +16,7 @@ body header {
 body header .banner {
   display: flex;
   align-items: center;
-   gap: 10px;
+  gap: 10px;
 }
 body header .banner p.title {
   font-size: 18px;
@@ -25,8 +25,14 @@ body header nav.navbar ul.nav_links {
   list-style-type: none;
 }
 body header nav.navbar ul.nav_links li {
-  padding: 0 10px;
+  padding: 10px;
   display: inline-block;
+}
+body header nav.navbar ul.nav_links li.active {
+  border-bottom: 2px solid hsl(0deg, 0%, 5%);
+}
+body header nav.navbar ul.nav_links li.active a {
+  color: hsl(0deg, 0%, 5%);
 }
 body header nav.navbar ul.nav_links li a {
   display: inline-block;
@@ -50,18 +56,54 @@ body section.section_homepage article p.title {
   font-size: 24px;
   font-weight: bolder;
 }
-body section.section_homepage article button {
+body section.section_homepage article:nth-child(1) button {
   margin: 10px auto;
   padding: 10px 20px;
   width: 300px;
   display: block;
   border: none;
-  border: 1px solid hsl(207deg, 100%, 50%);
-  background-color: hsla(207deg, 100%, 50%, 0.1);
   border-radius: 5px;
   cursor: pointer;
 }
-body section.section_homepage article button:hover {
+body section.section_homepage article:nth-child(1) button:nth-child(2) {
+  border: 1px solid hsl(207deg, 100%, 50%);
+  background-color: hsla(207deg, 100%, 50%, 0.1);
+}
+body section.section_homepage article:nth-child(1) button:nth-child(2):hover {
+  background-color: hsl(207deg, 100%, 50%);
+  color: hsl(0deg, 0%, 90%);
+  transition: all 350ms ease-in-out;
+}
+body section.section_homepage article:nth-child(1) button:nth-child(3) {
+  border: 1px solid hsl(9deg, 100%, 50%);
+  background-color: hsla(9deg, 100%, 50%, 0.1);
+}
+body section.section_homepage article:nth-child(1) button:nth-child(3):hover {
+  background-color: hsl(9deg, 100%, 50%);
+  color: hsl(0deg, 0%, 90%);
+  transition: all 350ms ease-in-out;
+}
+body section.section_homepage article:nth-child(1) button:nth-child(4) {
+  border: 1px solid hsl(51deg, 100%, 50%);
+  background-color: hsla(51deg, 100%, 50%, 0.1);
+}
+body section.section_homepage article:nth-child(1) button:nth-child(4):hover {
+  background-color: hsl(51deg, 100%, 50%);
+  color: hsl(0deg, 0%, 8%);
+  transition: all 350ms ease-in-out;
+}
+body section.section_homepage article:nth-child(2) button {
+  margin: 10px auto;
+  padding: 10px 20px;
+  width: 300px;
+  display: block;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  border: 1px solid hsl(207deg, 100%, 50%);
+  background-color: hsla(207deg, 100%, 50%, 0.1);
+}
+body section.section_homepage article:nth-child(2) button:hover {
   background-color: hsl(207deg, 100%, 50%);
   color: hsl(0deg, 0%, 90%);
   transition: all 350ms ease-in-out;

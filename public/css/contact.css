@@ -16,7 +16,7 @@ body header {
 body header .banner {
   display: flex;
   align-items: center;
-   gap: 10px;
+  gap: 10px;
 }
 body header .banner p.title {
   font-size: 18px;
@@ -25,8 +25,14 @@ body header nav.navbar ul.nav_links {
   list-style-type: none;
 }
 body header nav.navbar ul.nav_links li {
-  padding: 0 10px;
+  padding: 10px;
   display: inline-block;
+}
+body header nav.navbar ul.nav_links li.active {
+  border-bottom: 2px solid hsl(0deg, 0%, 5%);
+}
+body header nav.navbar ul.nav_links li.active a {
+  color: hsl(0deg, 0%, 5%);
 }
 body header nav.navbar ul.nav_links li a {
   display: inline-block;
@@ -40,6 +46,11 @@ body header nav.navbar ul.nav_links li a:hover {
 body section.section_contact {
   margin: 50px auto;
   width: 95%;
+}
+body section.section_contact > p {
+  text-align: center;
+  font-size: 34px;
+  margin-bottom: 10px;
 }
 body section.section_contact h1 {
   text-align: center;
@@ -65,7 +76,7 @@ body section.section_contact form .form-btn {
   margin: 10px auto;
   width: 350px;
 }
-body section.section_contact form .form-btn input {
+body section.section_contact form .form-btn button {
   margin-bottom: 5px;
   width: 100%;
   margin: 10px auto;
@@ -75,20 +86,20 @@ body section.section_contact form .form-btn input {
   border-radius: 5px;
   cursor: pointer;
 }
-body section.section_contact form .form-btn input.submit {
+body section.section_contact form .form-btn button.submit {
   border: 1px solid hsl(207deg, 100%, 50%);
   background-color: hsla(207deg, 100%, 50%, 0.1);
 }
-body section.section_contact form .form-btn input.submit:hover {
+body section.section_contact form .form-btn button.submit:hover {
   background-color: hsl(207deg, 100%, 50%);
   color: hsl(0deg, 0%, 90%);
   transition: all 350ms ease-in-out;
 }
-body section.section_contact form .form-btn input.reset {
+body section.section_contact form .form-btn button.reset {
   border: 1px solid hsl(342deg, 100%, 50%);
   background-color: hsla(342deg, 100%, 50%, 0.1);
 }
-body section.section_contact form .form-btn input.reset:hover {
+body section.section_contact form .form-btn button.reset:hover {
   background-color: hsl(342deg, 100%, 50%);
   color: hsl(0deg, 0%, 90%);
   transition: all 350ms ease-in-out;

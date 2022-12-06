@@ -1,0 +1,147 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;700&family=Roboto:wght@300&display=swap');
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'inter', sans-serif;
+}
+
+body {
+    & header {
+        display: flex;
+        padding: 20px;
+        justify-content: space-between;
+        align-items: center;
+        box-shadow: 0 0 5px hsl(0, 0%, 70%);
+
+        & .banner {
+            display: flex;
+            align-items: center;
+            gap: 10px;
+
+            & p.title {
+                font-size: 18px;
+            }
+        }
+
+        & nav.navbar {
+            & ul.nav_links {
+                list-style-type: none;
+
+                & li {
+                    padding: 10px;
+                    display: inline-block;
+
+                    &.active {
+                        border-bottom: 2px solid hsl(0, 0%, 5%);
+
+                        & a {
+                            color: hsl(0, 0%, 5%);
+                        }
+                    }
+
+                    & a {
+                        display: inline-block;
+                        text-decoration: none;
+                        color: hsl(0, 0%, 60%);
+
+                        &:hover {
+                            color: hsl(0, 0%, 5%);
+                            transition: all 350ms ease-in-out;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    & section.section_homepage {
+        margin-top: 50px;
+        height: 75vh;
+
+        & article {
+            margin: 40px 0;
+            text-align: center;
+
+            & p.title {
+                text-align: center;
+                font-size: 24px;
+                font-weight: bolder;
+            }
+
+            &:nth-child(1) {
+                & button {
+                    margin: 10px auto;
+                    padding: 10px 20px;
+                    width: 300px;
+                    display: block;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+
+                    &:nth-child(2) {
+                        border: 1px solid hsl(207, 100%, 50%);
+                        background-color: hsla(207, 100%, 50%, 0.1);
+
+                        &:hover {
+                            background-color: hsl(207, 100%, 50%);
+                            color: hsl(0, 0%, 90%);
+                            transition: all 350ms ease-in-out;
+                        }
+                    }
+
+                    &:nth-child(3) {
+                        border: 1px solid hsl(9, 100%, 50%);
+                        background-color: hsla(9, 100%, 50%, 0.1);
+
+                        &:hover {
+                            background-color: hsl(9, 100%, 50%);
+                            color: hsl(0, 0%, 90%);
+                            transition: all 350ms ease-in-out;
+                        }
+                    }
+
+                    &:nth-child(4) {
+                        border: 1px solid hsl(51, 100%, 50%);
+                        background-color: hsla(51, 100%, 50%, 0.1);
+
+                        &:hover {
+                            background-color: hsl(51, 100%, 50%);
+                            color: hsl(0, 0%, 8%);
+                            transition: all 350ms ease-in-out;
+                        }
+                    }
+                }
+            }
+
+            &:nth-child(2) {
+                & button {
+                    margin: 10px auto;
+                    padding: 10px 20px;
+                    width: 300px;
+                    display: block;
+                    border: none;
+                    border-radius: 5px;
+                    cursor: pointer;
+                    border: 1px solid hsl(207, 100%, 50%);
+                    background-color: hsla(207, 100%, 50%, 0.1);
+
+                    &:hover {
+                        background-color: hsl(207, 100%, 50%);
+                        color: hsl(0, 0%, 90%);
+                        transition: all 350ms ease-in-out;
+                    }
+                }
+            }
+        }
+    }
+
+    & footer {
+        padding: 20px;
+        background-color: hsl(0, 0%, 10%);
+        color: hsl(0, 0%, 90%);
+        text-align: center;
+        font-size: 14px;
+    }
+}

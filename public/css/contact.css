@@ -6,9 +6,16 @@
   font-family: "inter", sans-serif;
 }
 
+body {
+  background-image: url("./../../background.jpg");
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-blend-mode: lighten;
+}
 body header {
   display: flex;
   padding: 20px;
+  background-color: rgb(255, 255, 255);
   justify-content: space-between;
   align-items: center;
   box-shadow: 0 0 5px hsl(0deg, 0%, 70%);
@@ -44,8 +51,12 @@ body header nav.navbar ul.nav_links li a:hover {
   transition: all 350ms ease-in-out;
 }
 body section.section_contact {
+  padding: 20px 0;
   margin: 50px auto;
+  max-width: 400px;
   width: 95%;
+  background-color: hsla(0deg, 0%, 100%, 0.95);
+  border-radius: 10px;
 }
 body section.section_contact > p {
   text-align: center;
@@ -85,23 +96,20 @@ body section.section_contact form .form-btn button {
   border: none;
   border-radius: 5px;
   cursor: pointer;
+  color: hsl(0deg, 0%, 90%);
 }
 body section.section_contact form .form-btn button.submit {
-  border: 1px solid hsl(207deg, 100%, 50%);
-  background-color: hsla(207deg, 100%, 50%, 0.1);
+  background-color: hsla(207deg, 100%, 50%, 0.9);
 }
 body section.section_contact form .form-btn button.submit:hover {
   background-color: hsl(207deg, 100%, 50%);
-  color: hsl(0deg, 0%, 90%);
   transition: all 350ms ease-in-out;
 }
 body section.section_contact form .form-btn button.reset {
-  border: 1px solid hsl(342deg, 100%, 50%);
-  background-color: hsla(342deg, 100%, 50%, 0.1);
+  background-color: hsla(342deg, 100%, 50%, 0.9);
 }
 body section.section_contact form .form-btn button.reset:hover {
   background-color: hsl(342deg, 100%, 50%);
-  color: hsl(0deg, 0%, 90%);
   transition: all 350ms ease-in-out;
 }
 body footer {

@@ -8,9 +8,15 @@
 }
 
 body {
+    background-image: url("./../../background.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-blend-mode: lighten;
+
     & header {
         display: flex;
         padding: 20px;
+        background-color: rgb(255, 255, 255);
         justify-content: space-between;
         align-items: center;
         box-shadow: 0 0 5px hsl(0, 0%, 70%);
@@ -57,8 +63,12 @@ body {
     }
 
     & section.section_contact {
+        padding: 20px 0;
         margin: 50px auto;
+        max-width: 400px;
         width: 95%;
+        background-color: hsla(0, 0%, 100%, 0.95);
+        border-radius: 10px;
 
         & > p {
             text-align: center;
@@ -105,25 +115,22 @@ body {
                     border: none;
                     border-radius: 5px;
                     cursor: pointer;
+                    color: hsl(0, 0%, 90%);
 
                     &.submit {
-                        border: 1px solid hsl(207, 100%, 50%);
-                        background-color: hsla(207, 100%, 50%, 0.1);
+                        background-color: hsla(207, 100%, 50%, 0.9);
 
                         &:hover {
                             background-color: hsl(207, 100%, 50%);
-                            color: hsl(0, 0%, 90%);
                             transition: all 350ms ease-in-out;
                         }
                     }
 
                     &.reset {
-                        border: 1px solid hsl(342, 100%, 50%);
-                        background-color: hsla(342, 100%, 50%, 0.1);
+                        background-color: hsla(342, 100%, 50%, 0.9);
 
                         &:hover {
                             background-color: hsl(342, 100%, 50%);
-                            color: hsl(0, 0%, 90%);
                             transition: all 350ms ease-in-out;
                         }
                     }
